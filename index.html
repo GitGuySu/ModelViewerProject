@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Google Model-Viewer Project</title>
+        <link type="text/css" href="./styles.css" rel="stylesheet"/>
+        </head>
+    <body>
+        <model-viewer bounds="tight" enable-pan src="Elephant.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+            <button class="Hotspot" slot="hotspot-1" data-position="-0.2316939702169698m 1.8033609934868m 5.027393546565174m" data-normal="-0.8144269771654251m -0.051266941312876894m 0.5779968854532093m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Trunk</div>
+            </button><button class="Hotspot" slot="hotspot-2" data-position="-0.9912885115378849m 7.697655558493582m -0.7588076800937831m" data-normal="-0.5500975373762946m 0.8331906054205709m -0.05644567664081108m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Back</div>
+            </button><button class="Hotspot" slot="hotspot-4" data-position="-0.07243271760548353m 3.0363452029854834m -5.586611042114955m" data-normal="-0.7692797570094096m 0.29219695024319947m 0.5681809550874763m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Tail</div>
+            </button>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            <div id="ar-prompt">
+                <img src="ar_hand_prompt.png">
+            </div>
+          </model-viewer>  
+          <script src="script.js"></script>
+          <!-- Loads <model-viewer> for browsers: -->
+          <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+      
+    </body>
+</html>
